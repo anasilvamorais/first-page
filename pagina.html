@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<title>Minha Primeira Página Web</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo do cabeçalho */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Estilo da seção principal */
+section {
+  display: flex;
+}
+
+/* Estilo da área de navegação (rodapé com links das cidades) */
+nav {
+  background: #222;
+  color: white;
+  padding: 20px;
+  width: 30%;
+  min-height: calc(100vh - 140px); /* Calcula o espaço entre o cabeçalho e o rodapé */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 10px 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo do conteúdo das cidades */
+article {
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+}
+
+/* Estilo do rodapé */
+footer {
+  background-color: #222;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Layout responsivo */
+@media (max-width: 600px) {
+  section {
+    flex-direction: column;
+  }
+
+  nav, article {
+    width: 100%;
+    min-height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Bem-vindo(a) à página de Ana Júlia Silva de Morais</h2>
+<p>Esta é minha primeira criação de uma página web. Aqui você encontra informações sobre algumas cidades brasileiras.</p>
+
+<header>
+  <h2>Cidades Brasileiras</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#rio">Rio de Janeiro</a></li>
+      <li><a href="#sao-paulo">São Paulo</a></li>
+      <li><a href="#curitiba">Curitiba</a></li>
+    </ul>
+  </nav>
+  
+  <article id="rio">
+    <h1>Rio de Janeiro</h1>
+    <p>O Rio de Janeiro é conhecido por suas praias icônicas, como Copacabana e Ipanema, o Pão de Açúcar e o Cristo Redentor.</p>
+    <img src="https://blog.uber-cdn.com/cdn-cgi/image/width=2160,quality=80,onerror=redirect,format=auto/wp-content/uploads/2019/04/Vista-a%C3%A9rea-do-Rio-de-Janeiro.jpg" 
+         alt="Vista aérea do Rio de Janeiro" style="width:70%; display:block; margin:auto; border-radius:10px;">
+    <h2>História do Cristo Redentor</h2>
+    <p>O Cristo Redentor é uma das Sete Maravilhas do Mundo Moderno e um dos maiores símbolos do Brasil. Foi inaugurado em 12 de outubro de 1931 e é um símbolo de fé e acolhimento.</p>
+  </article>
+
+  <article id="sao-paulo">
+    <h1>São Paulo</h1>
+    <p>São Paulo é a maior cidade do Brasil e o principal centro econômico da América Latina. É conhecida por sua diversidade cultural, com atrações como a Avenida Paulista, o Mercado Municipal e o MASP.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScngxeKqICnCAbVyssX459r6_50sqpvnGz7A&s" 
+         alt="Vista aérea de São Paulo" style="width:70%; display:block; margin:auto; border-radius:10px;">
+    <p>Além disso, São Paulo é famosa pela sua gastronomia, vida noturna e eventos internacionais como a Bienal de Arte.</p>
+  </article>
+
+  <article id="curitiba">
+    <h1>Curitiba</h1>
+    <p>Curitiba, capital do Paraná, é conhecida por seu planejamento urbano e áreas verdes. Entre os destaques estão o Jardim Botânico, o Museu Oscar Niemeyer e o Parque Barigui.</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/Jardim_Bot%C3%A2nico_Centro_Curitiba.jpg/800px-Jardim_Bot%C3%A2nico_Centro_Curitiba.jpg" 
+         alt="Jardim Botânico de Curitiba" style="width:70%; display:block; margin:auto; border-radius:10px;">
+    <p>O Jardim Botânico é um dos cartões-postais da cidade, com sua estufa inspirada no Palácio de Cristal de Londres.</p>
+  </article>
+</section>
+
+<footer>
+  <p>Criado por Ana Júlia Silva de Morais - 2024</p>
+</footer>
+
+</body>
+</html>
